@@ -5,8 +5,8 @@
 Любые вопросы по решению заданий можете задавать в чате курса.
 
 #### 1. [Знакомство с Qt. Первое графическое приложение](https://github.com/NewStudentOk/HWqt/tree/main/Less_1).
-#### 2. [Qt Designer](https://github.com/NewStudentOk/HWqt/tree/main/Less_2).	
-#### 3. [Основные модули QT](https://github.com/NewStudentOk/HWqt/tree/main/Less_3).
+#### 2. [Основные модули QT](https://github.com/NewStudentOk/HWqt/tree/main/Less_2).	
+#### 3. [Qt Designer](https://github.com/NewStudentOk/HWqt/tree/main/Less_3).
 #### 4. [Виджеты](https://github.com/NewStudentOk/HWqt/tree/main/Less_4).
 #### 5. [Слоты и сигналы](https://github.com/NewStudentOk/HWqt/tree/main/Less_5).
 #### 6. [QtConcurrent](https://github.com/NewStudentOk/HWqt/tree/main/Less_6).
