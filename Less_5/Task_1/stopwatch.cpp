@@ -5,7 +5,8 @@
 Stopwatch::Stopwatch(QObject *parent) : QObject(parent)
 {
     timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
+    connect(timer, &QTimer::timeout,this,&Stopwatch::updateTime);
+//    connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
     elapsedMilliseconds = 0;
 }
 
@@ -47,5 +48,5 @@ void Stopwatch::lap()
     static int lapNumber = 1;
     int currentLapTime = elapsedMilliseconds;
     emit timeChanged(QString("Круг %1, время: %2 сек").arg(lapNumber++).arg(currentLapTime / 1000));
-    elapsedMilliseconds = 0; // Сброс времени для следующего круга
+//    elapsedMilliseconds = 0; // Сброс времени для следующего круга
 }

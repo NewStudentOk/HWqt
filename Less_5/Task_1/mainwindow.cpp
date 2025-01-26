@@ -8,7 +8,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     stopwatch = new Stopwatch(this);
-    connect(stopwatch, SIGNAL(timeChanged(QString)), this, SLOT(updateTimeDisplay(QString)));
+
+    connect(stopwatch, &Stopwatch::timeChanged, this, &MainWindow::updateTimeDisplay);
+//    connect(stopwatch, SIGNAL(timeChanged(QString)), this, SLOT(updateTimeDisplay(QString)));
+
 
     ui->lapButton->setEnabled(false);
 }
@@ -33,10 +36,10 @@ void MainWindow::on_startStopButton_clicked()
 
 void MainWindow::on_clearButton_clicked()
 {
-    stopwatch->stop(); // Останавливаем секундомер
+//    stopwatch->stop(); // Останавливаем секундомер
     stopwatch->reset(); // Сбрасываем время
-    ui->startStopButton->setText("Старт"); // Меняем текст кнопки на "Старт"
-    ui->lapButton->setEnabled(false); // Отключаем кнопку "Круг"
+//    ui->startStopButton->setText("Старт"); // Меняем текст кнопки на "Старт"
+//    ui->lapButton->setEnabled(false); // Отключаем кнопку "Круг"
     ui->lapsBrowser->clear(); // Очищаем текстовый браузер
 }
 
